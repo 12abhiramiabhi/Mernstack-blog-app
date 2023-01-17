@@ -11,56 +11,71 @@ body {
     border: none;
     align-items: center;
     background-color: #ffffff;
+    
 }
 
 .signup-card {
-    background-color: rgb(207, 199, 199);
+    /* background-color: rgb(207, 199, 199); */
+    background-color: #ffffff;
     height: 570px;
     width: 400px;
     border: none;
-
-
+    border-style: solid;
+   
 }
 
 .input12 {
     background: #f3f3f4;
     padding: 10px 16px;
-    width: 340px;
+    width: 330px;
     margin-left: 10px;
     color: #0d0c22;
     margin: 20px;
+    border-radius: 8px;
+
 }
 
 .signup-button {
     background: #Ea4c98;
     padding: 10px 16px;
     width: 350px;
-    margin-left: 20px;
+    margin-left: 25px;
+    border-radius: 8px;
 }
 
 .input1 {
     background: #f3f3f4;
     padding: 10px 16px;
-    width: 340px;
+    width: 330px;
     margin-left: 10px;
     color: #0d0c22;
     margin: 20px;
+    border-radius: 8px;
+
 }
 
 .input2 {
     background: #f3f3f4;
     padding: 10px 16px;
-    width: 340px;
+    width: 330px;
     margin-left: 10px;
     color: #0d0c22;
     margin: 20px;
+    border-radius: 8px;
+
 }
 
 .input3 {
     background: #f3f3f4;
     padding: 10px 16px;
-    width: 340px;
+    width: 330px;
     margin-left: 10px;
+
     color: #0d0c22;
     margin: 20px;
+    border-radius: 8px;
+
+}
+.signup-head{
+    margin-left: 150px;
 }
