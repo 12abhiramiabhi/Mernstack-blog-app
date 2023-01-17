@@ -1,5 +1,7 @@
 body {
-    background-color: white;
+    /* background-color: white; */
+    background: #f3f3f4;
+    color: #0d0c22;
 }
 
 .signup-container2 {
@@ -10,7 +12,8 @@ body {
     align-items: center;
     border: none;
     align-items: center;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    color: #0d0c22; 
     
 }
 
@@ -20,7 +23,7 @@ body {
     height: 570px;
     width: 400px;
     border: none;
-    border-style: solid;
+     /* border-style: solid;  */
    
 }
 
