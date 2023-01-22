@@ -207,6 +207,7 @@ cursor: pointer;
 }
 .search-input{
     padding: 0.8rem 0;
+    margin-left: 50px;
 }
 .design-content{
     display: grid;
