@@ -68,7 +68,7 @@ function HomePage() {
     </div>
     <div className='design-item'>
         <div className='design-img'>
-            <img src="https://t3.ftcdn.net/jpg/05/24/43/88/360_F_524438877_PZFzwc5OWJ3MTWQVFfHKwu1DRVMaSgPx.jpg" alt="" />
+            <img src="https://c4.wallpaperflare.com/wallpaper/658/185/126/squirt-art-guy-wallpaper-preview.jpg" alt="" />
             <span><i className='far fa-heart'></i>like 22</span>
             <span>art $ design </span>
         </div>
@@ -78,7 +78,7 @@ function HomePage() {
     </div>
     <div className='design-item'>
         <div className='design-img'>
-            <img src="https://media.istockphoto.com/photos/hand-painted-background-with-mixed-liquid-blue-and-golden-paints-picture-id1162167657?b=1&k=20&m=1162167657&s=612x612&w=0&h=6ZSIaRaxMptYS8zniEUAB3gAr2EvuBX2LK-fYua0okU=" alt="" />
+            <img src="https://media.istockphoto.com/id/1132442970/photo/colored-powder-explosion-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=9f6Nc2aWd_D8tQRvA3smOJxuG8P9YBTbSx3At4OEqyk=" alt="" />
             <span><i className='far fa-heart'></i>like 22</span>
             <span>art $ design </span>
         </div>

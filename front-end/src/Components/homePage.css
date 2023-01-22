@@ -26,7 +26,7 @@ img{
 }
 header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0.4), rgba(0,0,0,0.4)),url("https://wallpapercave.com/wp/wp2659179.jpg")center/
+    background: linear-gradient(rgba(0,0,0.4), rgba(0,0,0,0.4)),url("https://www.mydomaine.com/thmb/iLYNjkR5fOkUN5QwYl9bKQ9sHF8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Layerwhiteonwhite-34dd8cef8c89451887d51af215f76e60.jpg")center/
     cover no-repeat fixed;
     display: flex;
     flex-direction: column;
