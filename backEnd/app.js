@@ -20,8 +20,6 @@ const blogRouter = require("./routes/blog")
 app.use("/", blogRouter)
 
 
-
-
 app.listen(5000, (error) => {
     if (error) {
         console.log(error);

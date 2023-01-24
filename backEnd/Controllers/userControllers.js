@@ -5,6 +5,10 @@ const blog = (req, res) => {
     res.send("hai")
 }
 
+const login = async (req, res) => {
+    console.log(req.body);
+}
+
 
 const userSignup = async (req, res) => {
     console.log(req.body);
@@ -22,4 +26,4 @@ const userSignup = async (req, res) => {
     }
 }
 
-module.exports = { blog, userSignup }
+module.exports = { blog, userSignup, login }
