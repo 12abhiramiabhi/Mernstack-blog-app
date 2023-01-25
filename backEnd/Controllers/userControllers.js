@@ -6,7 +6,29 @@ const blog = (req, res) => {
 }
 
 const login = async (req, res) => {
-    console.log(req.body);
+    console.log(req.body);//fron end//
+
+    // console.log(user)
+
+    try {
+        let user = await userModel.findOne({ email: req.body.email })//data base user te object//
+
+        if (user == null) {
+            res.json({ sucess: false, message: "email validation error" })//user illegil null //
+        } else {
+            let pCorret = await bcrypt.compare(req.body.password, user.password)//encript cheythathum illathathum//
+            if (pCorret) {
+                res.json({ sucess: true, message: "successfully logedin" })//password  correct avubol succeesful//
+            } else {
+                res.json({ sucess: false, message: "password validation error" })//passwor thett avubol fales//
+            }
+        }
+    } catch (error) {
+        res.json({ sucess: false, message: "database validation error" })
+        console.log(error);
+
+    }
+
 }
 
 
