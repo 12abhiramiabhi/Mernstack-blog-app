@@ -16,8 +16,8 @@ const login = async (req, res) => {
         if (user == null) {
             res.json({ sucess: false, message: "email validation error" })//user illegil null //
         } else {
-            let pCorret = await bcrypt.compare(req.body.password, user.password)//encript cheythathum illathathum//
-            if (pCorret) {
+            let pCrct = await bcrypt.compare(req.body.password, user.password)//encript cheythathum illathathum//
+            if (pCrct) {
                 res.json({ sucess: true, message: "successfully logedin" })//password  correct avubol succeesful//
             } else {
                 res.json({ sucess: false, message: "password validation error" })//passwor thett avubol fales//
