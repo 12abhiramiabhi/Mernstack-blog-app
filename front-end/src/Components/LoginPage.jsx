@@ -15,7 +15,7 @@ function LoginPage() {
 
     async function loginButton() {
         let obj = {
-            password: userPasswordRef.current.value, email: userEmailRef.current.value
+            password: userPasswordRef.current.value , email: userEmailRef.current.value
         }
         console.log(userEmailRef.current.value);
         console.log(userPasswordRef.current.value);
