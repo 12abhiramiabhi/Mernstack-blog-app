@@ -1,0 +1,99 @@
+body {
+    /* background-color: white; */
+    /* background: #f3f3f4; */
+
+    /* color: #0d0c22; */
+    background: url("https://cdn.wallpapersafari.com/57/83/XzMnHc.jpg");
+    background-size: cover;
+
+}
+
+.blog-container2 {
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    align-items: center;
+    border: none;
+    align-items: center;
+    /* background-color: #ffffff; */
+    color: #0d0c22;
+
+}
+
+.blog-card {
+    /* background-color: rgb(207, 199, 199); */
+    background: url("https://cdn.wallpapersafari.com/57/83/XzMnHc.jpg");
+    /* background: url("https://img.freepik.com/free-photo/neutral-abstract-texture-simple-background_53876-102509.jpg?w=2000"); */
+    height: 530px;
+    width: 670px;
+    border: none;
+    /* border-style: solid;  */
+
+}
+
+.blog-input {
+    background: #f3f3f4;
+    padding: 10px 16px;
+    width: 370px;
+
+    color: #0d0c22;
+    margin: 20px;
+    border-radius: 8px;
+    margin-left: 85px;
+
+}
+
+.blog-button {
+    background: #d4cfd2;
+    padding: 10px 16px;
+    width: 380px;
+    margin-left: 90px;
+    border-radius: 6px;
+    margin-top: 40px;
+}
+
+.blog-button:hover {
+    background-color: gray;
+}
+
+.blog-1 {
+    background: #f3f3f4;
+    padding: 10px 16px;
+    width: 370px;
+
+    color: #0d0c22;
+    margin: 20px;
+    border-radius: 6px;
+    margin-left: 85px;
+
+}
+
+.blog-2 {
+    background: #f3f3f4;
+    padding: 10px 16px;
+    width: 370px;
+
+    color: #0d0c22;
+    /* margin: 40px; */
+    margin-left: 85px;
+    border-radius: 6px;
+
+}
+
+.text-area1 {
+    background: #f3f3f4;
+    padding: 36px 5px;
+    width: 370px;
+
+    color: #0d0c22;
+    margin: 40px;
+    margin-left: 87px;
+    border-radius: 6px;
+}
+
+.signup-head {
+    margin-left: 230px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
