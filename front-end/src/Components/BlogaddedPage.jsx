@@ -1,7 +1,15 @@
+import axios from 'axios'
 import React from 'react'
 import './blogPage.css'
 
 function BlogaddedPage() {
+
+    async function blogButton(){
+        let response = await axios.post("http://localhost:5000/blogAdding")
+        console.log( response );
+        alert(" blog added")
+    }
+
     return (
         <div>
 
@@ -14,7 +22,7 @@ function BlogaddedPage() {
                     {/* <input  placeholder='add your blog' className='blog-1' /><br /> */}
                     <input type="type" placeholder='created at' className='blog-2' /><br />
 
-                    <button className='blog-button'>submit</button>
+                    <button className='blog-button' onClick={blogButton} >submit</button>
                 </div>
             </div>
         </div>

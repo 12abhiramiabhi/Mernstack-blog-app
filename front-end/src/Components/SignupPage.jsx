@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 function SignupPage() {
 
-    const userNameRef = useRef()
+    const userNameRef = useRef()//input te value adukkan ref//
     const userEmailRef = useRef()
     const userPasswordRef = useRef()
     const userPhoneRef = useRef()

@@ -1,5 +1,6 @@
 const userModel = require("../models/userModel")
 const bcrypt = require('bcrypt');
+const blogaddModel = require("../models/blogaddModel");
 
 const blog = (req, res) => {
     res.send("hai")
@@ -31,6 +32,17 @@ const login = async (req, res) => {
 
 }
 
+const  blogAdding = async(req,res)=>{
+    console.log(req.body);
+    try {
+        await blogaddModel.create(req.body);
+        res.json({sucess:true,msg:"successfully added "})
+    } catch (error) {
+        res.json({sucess:false,msg:"validation error"})
+        console.log(error);
+    }
+}
+
 
 const userSignup = async (req, res) => {
     console.log(req.body);
@@ -48,4 +60,4 @@ const userSignup = async (req, res) => {
     }
 }
 
-module.exports = { blog, userSignup, login }
+module.exports = { blog, userSignup, login,blogAdding }
