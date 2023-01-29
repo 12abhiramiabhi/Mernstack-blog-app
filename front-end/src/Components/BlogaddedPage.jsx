@@ -5,7 +5,7 @@ import './blogPage.css'
 function BlogaddedPage() {
 
     async function blogButton(){
-        let response = await axios.post("http://localhost:5000/blogAdding")
+        let response = await axios.post("http://localhost:5000/BlogaddedPage")
         console.log( response );
         alert(" blog added")
     }
