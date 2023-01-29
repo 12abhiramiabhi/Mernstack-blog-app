@@ -1,8 +1,15 @@
 import React from 'react'
 import './homePage.css'
-
+import { useNavigate } from 'react-router-dom'
 
 function HomePage() {
+
+    const navigate = useNavigate()
+
+    async function blogButton2(){
+        navigate("/blogaddedPage")
+    }
+
     return (
         <div>
             <header>
@@ -11,7 +18,7 @@ function HomePage() {
                         <a href="HomePage.jsx" className='navbar-brand'>Art design</a>
                         <div className='navbar-nav'>
                             <a href="">home</a>
-                            <a href="">blog</a>
+                            <a href="" onClick={blogButton2}>blog</a>
                             <a href="">about</a>
                             <a href="">contact</a>
                             <a href="">Signup</a>
