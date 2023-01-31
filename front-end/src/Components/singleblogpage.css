@@ -1,28 +1,29 @@
-.single-card{
+.signup-container2 {
     display: flex;
     justify-content: center;
+
     height: 100vh;
     align-items: center;
+    border: none;
+    align-items: center;
+    /* background-color: #ffffff; */
+    color: #0d0c22; 
+    
 }
 
-.single-box{
-    background-color: cadetblue;
-    height: 550px;
-    width: 500px;
-    box-shadow: rgba(0,0,0,0.17,  0px -23px 25px 0px inset);
+.signup-card {
+    /* background-color: rgb(207, 199, 199); */
+    background-color: #ffffff;
+    height: 380px;
+    width: 440px;
+    border: none;
+     /* border-style: solid;  */
+   
 }
-.single-title{
-font-family: sans-serif;
-margin-left: 220px;
-margin-top: 60px;
-font-family:serif;
+.title-head{
+    margin-left: 180px;
 }
-.para-lorem{
-    color: white;
+.para9{
+    margin: 60px;
     font-family: sans-serif;
-    margin-top: 100px;
-    margin-left: 25px;
-    font-weight: 200;
-    font-size: x-large;
-    
 }
