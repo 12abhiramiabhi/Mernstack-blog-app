@@ -1,0 +1,28 @@
+.single-card{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.single-box{
+    background-color: cadetblue;
+    height: 550px;
+    width: 500px;
+    box-shadow: rgba(0,0,0,0.17,  0px -23px 25px 0px inset);
+}
+.single-title{
+font-family: sans-serif;
+margin-left: 220px;
+margin-top: 60px;
+font-family:serif;
+}
+.para-lorem{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 100px;
+    margin-left: 25px;
+    font-weight: 200;
+    font-size: x-large;
+    
+}
