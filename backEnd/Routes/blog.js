@@ -14,4 +14,5 @@ router.post("/loginPage", login);
 router.post("/Blogadded", Blogadded);
 router.get("/getBlog", getAllBlog);
 
+
 module.exports = router;

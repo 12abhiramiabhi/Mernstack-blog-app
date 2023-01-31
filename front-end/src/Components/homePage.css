@@ -1,55 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,900;1,400;1,500&display=swap');
-:root{
---playfair:'playfair display',serif;
---quicksand:'quicksand',sans-serif;
---roboto:'roboto',sans-serif;
---dark:#3c393d;
---exDark:#2b2b2b;
+
+:root {
+    --playfair: 'playfair display', serif;
+    --quicksand: 'quicksand', sans-serif;
+    --roboto: 'roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     font-family: var(--quicksand)
 }
-body{
+
+body {
     line-height: 1.4;
     color: var(--dark);
 }
-img{
+
+img {
     width: 100%;
     display: block;
 }
-.container{
+
+.container {
     max-width: 1320px;
-    margin:  0 auto;
-    padding:  0 1.2rem;
+    margin: 0 auto;
+    padding: 0 1.2rem;
 }
-header{
+
+header {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0.4), rgba(0,0,0,0.4)),url("https://www.mydomaine.com/thmb/iLYNjkR5fOkUN5QwYl9bKQ9sHF8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Layerwhiteonwhite-34dd8cef8c89451887d51af215f76e60.jpg")center/
-    cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://www.mydomaine.com/thmb/iLYNjkR5fOkUN5QwYl9bKQ9sHF8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Layerwhiteonwhite-34dd8cef8c89451887d51af215f76e60.jpg")center/ cover no-repeat fixed;
     display: flex;
     flex-direction: column;
-    justify-content:stretch ;
+    justify-content: stretch;
 }
-.navbar{
-    background: rgba(0,0,0,0.6);
+
+.navbar {
+    background: rgba(0, 0, 0, 0.6);
     padding: 1.2rem;
-    
+
 }
-.navbar-brand{
+
+.navbar-brand {
     color: #fff;
     font-size: 2rem;
-display: block;
-text-decoration: none;
-font-family: var(--playfair);
-letter-spacing: 1px;
+    display: block;
+    text-decoration: none;
+    font-family: var(--playfair);
+    letter-spacing: 1px;
 }
-.navbar-nav{
+
+.navbar-nav {
     padding: 0.8rem 0 0.2rem 0;
     text-align: center;
 }
-.navbar-nav a{
+
+.navbar-nav a {
     text-transform: uppercase;
     font-family: var(--roboto);
     letter-spacing: 1px;
@@ -61,9 +70,12 @@ letter-spacing: 1px;
     letter-spacing: 3px;
     transition: opacity 0.5s ease;
 }
-.navbar-nav a:hover{
+
+.navbar-nav a:hover {
     opacity: 0.7;
-}.banner{
+}
+
+.banner {
     flex: 1;
     display: flex;
     align-items: center;
@@ -71,15 +83,18 @@ letter-spacing: 1px;
     text-align: center;
     color: #fff;
 }
-.banner-title{
+
+.banner-title {
     font-size: 3rem;
     font-family: var(--playfair);
 }
-.banner-title span{ 
-font-family: var(--playfair);
-color: var(--exDark);
+
+.banner-title span {
+    font-family: var(--playfair);
+    color: var(--exDark);
 }
-.banner p{
+
+.banner p {
     padding: 1rem 0 2rem 0;
     font-size: 1.2rem;
     text-transform: capitalize;
@@ -87,14 +102,16 @@ color: var(--exDark);
     font-weight: 300;
     word-spacing: 2px;
 }
-.banner form{
+
+.banner form {
     background: #fff;
     border-radius: 2rem;
     padding: 0.6rem 1rem;
     display: flex;
     justify-content: space-between;
 }
-.search-input{
+
+.search-input {
     font-family: var(--roboto);
     font-size: 1.1rem;
     width: 100%;
@@ -102,59 +119,72 @@ color: var(--exDark);
     padding: 0.6rem 0;
     border: none;
 }
-.search-input::placeholder{
+
+.search-input::placeholder {
     text-transform: capitalize;
 }
-.search-btn{
+
+.search-btn {
     width: 40px;
-font-size: 1.1rem;
-color: var(--dark);
-border: none;
-background: transparent;
-outline: 0;
-cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
 }
-.design{
+
+.design {
     padding: 4.5rem 0;
 }
-.title{
+
+.title {
     text-align: center;
-    padding:  1rem 0;
+    padding: 1rem 0;
 }
-.title h2{
+
+.title h2 {
     font-family: var(--playfair);
     font-size: 2.4rem;
 }
-.title p{
+
+.title p {
     text-transform: uppercase;
     padding: 0.6rem 0;
 }
-.design-content{
+
+.design-content {
     margin: 2rem 0;
 }
-.design-item{
+
+.design-item {
     cursor: pointer;
     margin: 1.5rem 0;
 }
-.design-img{
+
+.design-img {
     position: relative;
     overflow: hidden;
 }
-.design-img::after{
+
+.design-img::after {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0,0,0,0.3,);
+    background: rgba(0, 0, 0, 0.3, );
 }
-.design-img img{
-    transition:  all 0.5s ease;
+
+.design-img img {
+    transition: all 0.5s ease;
 }
-.design-item:hover img{
+
+.design-item:hover img {
     transform: scale(1.2);
 }
-.design-img span:first-of-type{
+
+.design-img span:first-of-type {
     position: absolute;
     z-index: 1;
     top: 10px;
@@ -163,7 +193,8 @@ cursor: pointer;
     color: #fff;
     padding: 0.25rem 1rem;
 }
-.design-img span:last-of-type{
+
+.design-img span:last-of-type {
     position: absolute;
     z-index: 1;
     bottom: 10px;
@@ -172,27 +203,32 @@ cursor: pointer;
     font-weight: 700;
     font-size: 1.1rem;
 }
-.design-title{
+
+.design-title {
     padding: 1rem;
     font-size: 1.2rem;
     text-align: center;
     width: 70%;
     margin: 0 auto;
 }
-.design-title a{
-    color: var(--dark);
+
+.design-title a {
+    color: white;
     text-decoration: none;
     text-transform: capitalize;
     font-family: var(--playfair);
 }
-.navbar-nav a{
-        padding-right: 1.2rem;
-        padding-left: 1.2rem;
+
+.navbar-nav a {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
 }
-.banner-title{
+
+.banner-title {
     font-size: 5rem;
 }
-.banner form{
+
+.banner form {
     margin-top: 1.4rem;
     width: 80%;
     margin-left: auto;
@@ -200,25 +236,29 @@ cursor: pointer;
 }
 
 
-.navbar .container{
+.navbar .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.search-input{
+
+.search-input {
     padding: 0.8rem 0;
     margin-left: 50px;
 }
-.design-content{
+
+.design-content {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
-.design-item{
+
+.design-item {
     margin: 0;
 }
-.blog-content{
+
+.blog-content {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }

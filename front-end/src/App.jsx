@@ -6,6 +6,7 @@ import SignupPage from './Components/SignupPage'
 import LoginPage from './Components/LoginPage'
 import HomePage from './Components/HomePage'
 import BlogaddedPage from './Components/BlogaddedPage'
+import SingleBlogPage from './Components/SingleBlogPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
         <Route path="LoginPage" element={<LoginPage />} />
         <Route path="HomePage" element={<HomePage />} />
         <Route path="BlogaddedPage" element={<BlogaddedPage />} />
+        <Route path="SingleBlogPage" element={< SingleBlogPage />} />
       </Routes>
     </BrowserRouter>
   )

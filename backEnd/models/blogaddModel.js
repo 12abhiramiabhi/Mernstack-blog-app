@@ -15,5 +15,6 @@ const blogSchema = mongoose.Schema({
     maxLength: 200,
     required: true,
   },
+
 });
 module.exports = mongoose.model("blog", blogSchema);

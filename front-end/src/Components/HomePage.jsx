@@ -2,12 +2,20 @@ import "./homePage.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
+import CardPage from "./CardPage";
+import { useState } from "react";
 
 function HomePage() {
+  const [allblog, setallblogs] = useState()
   const getAllBlog = async () => {
     let response = await axios.get("http://localhost:5000/getBlog");
     console.log(response);
+    if (response.data.sucess) {
+      setallblogs(response.data.getBlog)
+    }
   };
+
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -66,91 +74,13 @@ function HomePage() {
           </div>
 
           <div className="design-content">
-            <div className="design-item">
-              <div className="design-img">
-                <img
-                  src="https://media.istockphoto.com/id/1132442970/photo/colored-powder-explosion-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=9f6Nc2aWd_D8tQRvA3smOJxuG8P9YBTbSx3At4OEqyk="
-                  alt=""
-                />
-                <span>
-                  <i className="far fa-heart"></i>like 22
-                </span>
-                <span>art $ design </span>
-              </div>
-              <div className="design-title">
-                <a href="#">
-                  make an awesome art portpolio for college or university
-                </a>
-              </div>
-            </div>
-            <div className="design-item">
-              <div className="design-img">
-                <img
-                  src="https://c4.wallpaperflare.com/wallpaper/658/185/126/squirt-art-guy-wallpaper-preview.jpg"
-                  alt=""
-                />
-                <span>
-                  <i className="far fa-heart"></i>like 22
-                </span>
-                <span>art $ design </span>
-              </div>
-              <div className="design-title">
-                <a href="#">
-                  make an awesome art portpolio for college or university
-                </a>
-              </div>
-            </div>
-            <div className="design-item">
-              <div className="design-img">
-                <img
-                  src="https://c4.wallpaperflare.com/wallpaper/658/185/126/squirt-art-guy-wallpaper-preview.jpg"
-                  alt=""
-                />
-                <span>
-                  <i className="far fa-heart"></i>like 22
-                </span>
-                <span>art $ design </span>
-              </div>
-              <div className="design-title">
-                <a href="#">
-                  make an awesome art portpolio for college or university
-                </a>
-              </div>
-            </div>
-            <div className="design-item">
-              <div className="design-img">
-                <img
-                  src="https://media.istockphoto.com/id/1132442970/photo/colored-powder-explosion-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=9f6Nc2aWd_D8tQRvA3smOJxuG8P9YBTbSx3At4OEqyk="
-                  alt=""
-                />
-                <span>
-                  <i className="far fa-heart"></i>like 22
-                </span>
-                <span>art $ design </span>
-              </div>
-              <div className="design-title">
-                <a href="#">
-                  make an awesome art portpolio for college or university
-                </a>
-              </div>
-            </div>
-            <div className="design-item">
-              <div className="design-img">
-                <img
-                  src="https://media.istockphoto.com/id/1134512518/photo/abstract-hand-painted-art-background-on-canvas.jpg?b=1&s=612x612&w=0&k=20&c=UfkeC1cZHV-jAB1pUEg5zdr_0wMv32eZWDbPTQn6748="
-                  alt=""
-                />
-                <span>
-                  <i className="far fa-heart"></i>like 22
-                </span>
-                <span>art $ design </span>
-              </div>
-              <div className="design-title">
-                <a href="#">
-                  make an awesome art portpolio for college or university
-                </a>
-              </div>
-            </div>
+            {
+              allblog && allblog.map((blogdata) => {
+                return <CardPage blogdata={blogdata} />
+
+              })
+            }
+
           </div>
         </div>
       </section>
