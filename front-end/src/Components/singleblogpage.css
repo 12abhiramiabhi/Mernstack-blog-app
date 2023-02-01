@@ -6,24 +6,31 @@
     align-items: center;
     border: none;
     align-items: center;
-    /* background-color: #ffffff; */
     color: #0d0c22; 
     
 }
 
 .signup-card {
-    /* background-color: rgb(207, 199, 199); */
-    background-color: #ffffff;
+
+    background-color: #554f4f;
     height: 380px;
-    width: 440px;
+    width: 430px;
     border: none;
-     /* border-style: solid;  */
+    box-shadow: #ffffff;
    
 }
 .title-head{
-    margin-left: 180px;
+    margin-left: 110px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 .para9{
     margin: 60px;
     font-family: sans-serif;
+    color: white;
+}
+.img2{
+    height: 100px;
+    width: 200px;
+    margin-left: 40px;
 }

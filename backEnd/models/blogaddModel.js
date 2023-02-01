@@ -15,6 +15,11 @@ const blogSchema = mongoose.Schema({
     maxLength: 200,
     required: true,
   },
-
+  imgUrl: {
+    type: String,
+  },
+  categary: {
+    type: String,
+  },
 });
 module.exports = mongoose.model("blog", blogSchema);

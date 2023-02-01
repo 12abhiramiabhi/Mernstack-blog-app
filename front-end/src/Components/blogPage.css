@@ -46,11 +46,14 @@ body {
 
 .blog-button {
     background: #d4cfd2;
-    padding: 10px 16px;
-    width: 380px;
-    margin-left: 90px;
+    /* padding: 10px 16px; */
+    width: 330px;
+    height: 30px;
+    /* margin-left: 50px; */
     border-radius: 6px;
-    margin-top: 40px;
+    margin-left: 500px;
+    margin: 20px;
+    
 }
 
 .blog-button:hover {
@@ -87,7 +90,7 @@ body {
     width: 370px;
 
     color: #0d0c22;
-    margin: 40px;
+    margin: 30px;
     margin-left: 87px;
     border-radius: 6px;
 }
@@ -96,4 +99,18 @@ body {
     margin-left: 230px;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.img22{
+    margin: 30px;
+    height: 30px;
+    width: 350px;
+    margin-left: 100px;
+    border: none;
+}
+.categary{
+    margin: 10px;
+    height: 30px;
+    width: 350px;
+    margin-left: 100px;
+    border: none;
 }
