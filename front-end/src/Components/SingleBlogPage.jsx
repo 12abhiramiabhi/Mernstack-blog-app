@@ -13,7 +13,7 @@ function SingleBlogPage() {
           {location.state.discription}
           <img className="img2" src={location.state.imgUrl} alt="" />
         </p>
-        categary ={location.state.categary}
+        categary ={location.statecategary}
       </div>
     </div>
   );
