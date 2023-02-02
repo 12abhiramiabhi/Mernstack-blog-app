@@ -6,21 +6,27 @@ import CardPage from "./CardPage";
 import { useState } from "react";
 
 function HomePage() {
-  const [allblog, setallblogs] = useState()
+  const [allblog, setallblogs] = useState();
   const getAllBlog = async () => {
     let response = await axios.get("http://localhost:5000/getBlog");
     console.log(response);
     if (response.data.sucess) {
-      setallblogs(response.data.getBlog)
+      setallblogs(response.data.getBlog);
     }
   };
-
 
   const navigate = useNavigate();
 
   useEffect(() => {
     getAllBlog();
   }, []);
+
+  async function buttonCat() {
+    let response = await axios.get(
+      "http:/localhost:5000/blog-by-categary/sports"
+    );
+    console.log(response);
+  }
 
   async function blogButton2() {
     navigate("/blogaddedPage");
@@ -40,7 +46,9 @@ function HomePage() {
                 blog
               </a>
               <a href="">about</a>
-              <a href="">contact</a>
+              <a href="" onClick={buttonCat}>
+                categary{" "}
+              </a>
               <a href="">Signup</a>
               <a href="">Login</a>
             </div>
@@ -74,13 +82,10 @@ function HomePage() {
           </div>
 
           <div className="design-content">
-            {
-              allblog && allblog.map((blogdata) => {
-                return <CardPage blogdata={blogdata} />
-
-              })
-            }
-
+            {allblog &&
+              allblog.map((blogdata) => {
+                return <CardPage blogdata={blogdata} />;
+              })}
           </div>
         </div>
       </section>
