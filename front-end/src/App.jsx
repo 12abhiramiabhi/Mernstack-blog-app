@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import SignupPage from './Components/SignupPage'
-import LoginPage from './Components/LoginPage'
-import HomePage from './Components/HomePage'
-import BlogaddedPage from './Components/BlogaddedPage'
-import SingleBlogPage from './Components/SingleBlogPage'
+import { useState } from "react";
+
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SignupPage from "./Components/SignupPage";
+import LoginPage from "./Components/LoginPage";
+import HomePage from "./Components/HomePage";
+import BlogaddedPage from "./Components/BlogaddedPage";
+import SingleBlogPage from "./Components/SingleBlogPage";
+import CategaryBlog from "./Components/CategaryBlog";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <BrowserRouter>
@@ -18,10 +19,11 @@ function App() {
         <Route path="LoginPage" element={<LoginPage />} />
         <Route path="HomePage" element={<HomePage />} />
         <Route path="BlogaddedPage" element={<BlogaddedPage />} />
-        <Route path="SingleBlogPage" element={< SingleBlogPage />} />
+        <Route path="SingleBlogPage" element={<SingleBlogPage />} />
+        <Route path="CategaryBlog" element={<CategaryBlog />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

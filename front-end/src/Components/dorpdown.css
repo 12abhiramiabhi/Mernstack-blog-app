@@ -1,0 +1,43 @@
+ul{
+    list-style: none;
+    /* background: blue; */
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li ul.drop li{
+    display: block;
+}
+ul li ul.drop{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: #112c66;
+}
+ul li:hover ul.drop{
+    display: block;
+}
+.cat{
+    font-size: small;
+}
+.dropss{
+    transform: translate(10px ,-10px);
+    margin-left: 700px;
+    /* margin-bottom: 10px; */
+}
+.arts{
+    font-size: small;
+}

@@ -4,6 +4,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import CardPage from "./CardPage";
 import { useState } from "react";
+import DropDown from "./DropDown";
 
 function HomePage() {
   const [allblog, setallblogs] = useState();
@@ -41,16 +42,19 @@ function HomePage() {
               Art design
             </a>
             <div className="navbar-nav">
+              {/* <a href="" className="home">
+                home
+              </a> */}
               <a href="">home</a>
+
               <a href="" onClick={blogButton2}>
                 blog
               </a>
               <a href="">about</a>
-              <a href="" onClick={buttonCat}>
-                categary{" "}
-              </a>
+
               <a href="">Signup</a>
               <a href="">Login</a>
+              <DropDown />
             </div>
           </div>
         </nav>
