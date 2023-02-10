@@ -2,3 +2,31 @@
     display: flex;
     justify-content: space-between;
 }
+body {
+    /* background-color: white; */
+    background: #f3f3f4;
+    color: #0d0c22;
+}
+
+.container-cate {
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    align-items: center;
+    border: none;
+    align-items: center;
+    /* background-color: #ffffff; */
+    color: #0d0c22; 
+    
+}
+
+.cate-card {
+    /* background-color: rgb(207, 199, 199); */
+    background-color: #ffffff;
+    height: 570px;
+    width: 400px;
+    border: none;
+     /* border-style: solid;  */
+   
+}

@@ -4,6 +4,7 @@ import './categaryblog.css'
 
 function CategaryBlog() {
   return (
+<div>
     <div>
       <ul className="drop">
         <li>
@@ -26,6 +27,16 @@ function CategaryBlog() {
         </li>
       </ul>
     </div>
+    <div className="container-cate">
+      <div className="cate-card">
+        <h1>categaryblog</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ratione doloremque dolorem ab deserunt quod impedit, in adipisci, suscipit asperiores sed. Reiciendis consectetur accusantium repellendus
+          
+        </p>
+      </div>
+
+    </div>
+</div>  
   );
 }
 
