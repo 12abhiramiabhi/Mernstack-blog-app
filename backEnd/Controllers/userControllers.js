@@ -83,6 +83,17 @@ const categary = async (req, res) => {
   }
 };
 
+const allCategaryPage = async (req, res) => {
+  try {
+    let getBlog = await blogaddModel.find({ categary: req.params.categary });
+    console.log(getBlog);
+    res.json({ sucess: true, message: "sucessfully added ", getBlog });
+  } catch (error) {
+    res.json({ sucess: false, message: " error" });
+    console.log(error);
+  }
+};
+
 module.exports = {
   blog,
   userSignup,
@@ -91,4 +102,5 @@ module.exports = {
   getBlogPage,
   getAllBlog,
   categary,
+  allCategaryPage,
 };

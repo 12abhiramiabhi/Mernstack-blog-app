@@ -1,5 +1,6 @@
 import React from "react";
 import "./dorpdown.css";
+import { Link } from "react-router-dom";
 
 function DropDown() {
   return (
@@ -11,24 +12,16 @@ function DropDown() {
           </a>
           <ul className="drop">
             <li>
-              <a href="" className="arts">
-                arts
-              </a>
+              <Link to="/CategaryBlog/arts">arts</Link>
             </li>
             <li>
-              <a href="" className="arts">
-                sports
-              </a>
+              <Link to="/CategaryBlog/sports">sports</Link>
             </li>
             <li>
-              <a href="" className="arts">
-                science
-              </a>
+              <Link to="/CategaryBlog/science">science</Link>
             </li>
             <li>
-              <a href="" className="arts">
-                arts
-              </a>
+              <Link to="/CategaryBlog/tech">tech</Link>
             </li>
           </ul>
         </li>

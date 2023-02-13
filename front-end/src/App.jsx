@@ -20,7 +20,7 @@ function App() {
         <Route path="HomePage" element={<HomePage />} />
         <Route path="BlogaddedPage" element={<BlogaddedPage />} />
         <Route path="SingleBlogPage" element={<SingleBlogPage />} />
-        <Route path="CategaryBlog" element={<CategaryBlog />} />
+        <Route path="CategaryBlog/:categary" element={<CategaryBlog />} />
       </Routes>
     </BrowserRouter>
   );
