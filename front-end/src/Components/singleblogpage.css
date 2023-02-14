@@ -13,33 +13,39 @@
 .signup-card {
 
     background-color: #554f4f;
-    height: 590px;
-    width: 990px;
-    border: none;
-    box-shadow: #ffffff;
-    
+    height: 100vh;
+    width: 100vh;
    
 }
 .title-head{
-    margin-left: 280px;
+    margin-left: 20px;
+    margin-top: 60px;
     font-family: sans-serif;
     color: white;
 }
 .para9{
-    margin: 30px;
     font-family: sans-serif;
     color: white;
-    margin-left: 300px;
+    margin-top: 25px;
+    margin-left: 25px;
+
 }
 .img2{
     height: 200px;
-    width: 290px;
-    margin-left: 40px;
+    width: 250px;
+    margin-left: 250px;
+    margin-top: 35px;
 }
 .input9{
       margin: 30px;
     padding: 10px;
 
+}
+.cat{
+    margin-bottom: 90px;
+    margin-left: 250px;
+    padding-top: 28px;
+    
 }
 .text{
  height: 80px;
@@ -48,13 +54,48 @@
 
 
 }
-.but{
- 
-    margin: 150px;
-    font-size: 20px;
-    border: none;
+.cmnt-list{
+    display: flex;
+    margin-left: 200px;
+    padding: 10px;
 }
-.but:hover{
-    color: #554f4f; 
+.cmnt-card{
+    padding: 10px;
+    height: 450px;
+    width: 550px;
+    background: rgb(191,159,159,);
+    margin-left: 600px;
+    margin-top: -350px;
+    border-radius: 10px;
+
 }
+.addcmnt{
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.cmntname{
+    color: rgb(5,5,5,);
+    width: 500px;
+    height: 40px;
+    align-items: center;
+    background-color: rgb(250,249,249,);
+    font-size: small;
+    border-radius: 10px;
+    margin-left: 23px;
+}
+.textarea{
+    margin-left: 160px;
+    margin-top: 25px;
+}
+.cmnt-btn{
+    color: #0d0c22;
+    width: 75px;
+    height: 40px;
+    align-items: center;
+    background-color: aliceblue;
+    font-size: large;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 
