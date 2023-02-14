@@ -1,6 +1,7 @@
 const userModel = require("../models/userModel");
 const bcrypt = require("bcrypt");
 const blogaddModel = require("../models/blogaddModel");
+const addCommndModel = require("../models/addCommndModel");
 
 const blog = (req, res) => {
   res.send("hai");
@@ -94,6 +95,18 @@ const allCategaryPage = async (req, res) => {
   }
 };
 
+const addCommnd = async (req, res) => {
+  try {
+    req.body.date = new Date().toDateString();
+    req.body.blogId = req.params.blogId;
+    await addCommndModel.create(req.body);
+    res.json({ sucess: true, message: "successfully  commend add" });
+  } catch (error) {
+    res.json({ sucess: false, message: " error" });
+    console.log(error);
+  }
+};
+
 module.exports = {
   blog,
   userSignup,
@@ -103,4 +116,5 @@ module.exports = {
   getAllBlog,
   categary,
   allCategaryPage,
+  addCommnd,
 };

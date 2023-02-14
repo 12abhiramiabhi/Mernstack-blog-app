@@ -13,24 +13,48 @@
 .signup-card {
 
     background-color: #554f4f;
-    height: 380px;
-    width: 430px;
+    height: 590px;
+    width: 990px;
     border: none;
     box-shadow: #ffffff;
+    
    
 }
 .title-head{
-    margin-left: 110px;
+    margin-left: 280px;
     font-family: sans-serif;
     color: white;
 }
 .para9{
-    margin: 60px;
+    margin: 30px;
     font-family: sans-serif;
     color: white;
+    margin-left: 300px;
 }
 .img2{
-    height: 100px;
-    width: 200px;
+    height: 200px;
+    width: 290px;
     margin-left: 40px;
 }
+.input9{
+      margin: 30px;
+    padding: 10px;
+
+}
+.text{
+ height: 80px;
+ width: 250px;
+ margin-left: 94px;
+
+
+}
+.but{
+ 
+    margin: 150px;
+    font-size: 20px;
+    border: none;
+}
+.but:hover{
+    color: #554f4f; 
+}
+

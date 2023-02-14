@@ -8,6 +8,7 @@ const {
   getAllBlog,
   categary,
   allCategaryPage,
+  addCommnd,
 } = require("../controllers/usercontrollers");
 
 router.get("/", blog);
@@ -17,5 +18,6 @@ router.post("/Blogadded", Blogadded);
 router.get("/getBlog", getAllBlog);
 router.get("/blog-by-categary/:categary", categary);
 router.get("/cate", allCategaryPage);
+router.post("/addCommnd/:blogId", addCommnd);
 
 module.exports = router;

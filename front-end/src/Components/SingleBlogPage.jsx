@@ -12,8 +12,17 @@ function SingleBlogPage() {
         <p className="para9">
           {location.state.discription}
           <img className="img2" src={location.state.imgUrl} alt="" />
+          categary ={location.statecategary}
         </p>
-        categary ={location.statecategary}
+
+        <input className="input9" type="text" placeholder="enter name" />
+        <textarea
+          className="text"
+          cols="10"
+          rows="5"
+          placeholder="commends"
+        ></textarea>
+        <button className="but">submit</button>
       </div>
     </div>
   );
