@@ -22,6 +22,15 @@ function SingleBlogPage() {
       obj
     );
     console.log(response);
+    if(response.data.sucess){
+userNameRef.current.value=""
+CommendTextRef.current.value=""
+alert("comment add sucessfully")
+    }else{
+      alert("validation error")
+    }
+
+
     return (
       <div>
         <div className="single-card">
@@ -31,7 +40,7 @@ function SingleBlogPage() {
               {location.state.discription}
               <img className="image" src={location.state.imgUrl} alt="" />
             </p>
-            <div className="cat">categary ={location.statecategary}</div>
+            <div className="cat">categary ={location.state.categary}</div>
 
             <div className="cmnt-lists">
               <div className="cmntcardz">
@@ -40,7 +49,7 @@ function SingleBlogPage() {
                   type="text"
                   placeholder="Name"
                   className="cmntname"
-                  ref={username}
+                  ref={userNameRef}
                 />
                 <textarea
                   name=""
