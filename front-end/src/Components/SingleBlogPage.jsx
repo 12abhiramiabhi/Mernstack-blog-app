@@ -1,10 +1,17 @@
-import react from "react";
-import { useLocation } from "react-router-dom";
-import "./singleblogpage.css";
-import axios from "axios";
-import { useRef } from "react";
+
+import axios from "axios"
+import React, { useEffect, useRef, useState } from 'react'
+import { Navigate, useLocation } from 'react-router-dom'
+import "./singleblogpage.css"
+import { useNavigate } from 'react-router-dom'
+import { useRef } from "react"
+import CmntCard from './CmntCard'
 
 function SingleBlogPage() {
+
+  const [cmntBlog, setCmntBlog] = useState([])
+  const navigate = useNavigate()
+
   const location = useLocation();
   console.log(location.state);
 
@@ -29,6 +36,21 @@ alert("comment add sucessfully")
     }else{
       alert("validation error")
     }
+
+    async function Edit() {
+      navigate("/edit", { state: location.state })
+  }
+
+  async function cmntPage() {
+    let response = await axios.get(`localhost:5000/update-blog/${location.state._id}`)
+    console.log(response)
+    if (response.data.sucess) {
+        setCmntBlog(response.data.allCmnts)
+    }
+}
+useEffect(() => {
+    cmntPage()
+}, [])
 
 
     return (
@@ -65,33 +87,13 @@ alert("comment add sucessfully")
                 </button>
               </div>
             </div>
+       
+            {
+                        CmntCard && CmntCard.map((a) => {
+                            return <CmntOneCard blogCmntss={a} />
+                        })
+                    }
 
-            <div className="viewcmnt">
-              <div className="cmnt_read">
-                <h3 className="user-name">abhi</h3>
-                <p className="cmnt-para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquid quibusdam, ratione saepe commodi laudantium nam quae
-                  reiciendis impedit eius optio consequuntur aperiam cum
-                  excepturi fugit pariatur voluptates incidunt provident
-                  blanditiis?
-                </p>
-                <button className="view-cmnt">View New Comments</button>
-              </div>
-            </div>
-            <div className="viewcmnt">
-              <div className="cmnt_read">
-                <h3 className="user-name">Poornima</h3>
-                <p className="cmnt-para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquid quibusdam, ratione saepe commodi laudantium nam quae
-                  reiciendis impedit eius optio consequuntur aperiam cum
-                  excepturi fugit pariatur voluptates incidunt provident
-                  blanditiis?
-                </p>
-                <button className="view-cmnt">View New Comments</button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
