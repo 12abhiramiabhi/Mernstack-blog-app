@@ -11,15 +11,15 @@ function Edit() {
 
     const [title, setTitle] = useState("")
     const [discription, setDiscrition] = useState("")
-    const [ imgUrl, setImage] = useState("")
+    const [imgUrl, setImage] = useState("")
     const [date, setDate] = useState("")
-    const [ categary, setCategoery] = useState("")
+    const [categary, setCategary] = useState("")
 
 
 
     async function btnedit(e) {
         e.preventDefault()
-        let obj = { title, discription,  imgUrl, date, categary }
+        let obj = { title, discription, imgUrl, date, categary }
         console.log(obj)
 
         let response = await axios.post(`http://localhost:5000/update-blog/${location.state._id}`, obj)
@@ -34,9 +34,9 @@ function Edit() {
     useEffect(() => {
         setTitle(location.state.title)
         setDiscrition(location.state.discription)
-        setImage(location.state. imgUrl)
+        setImage(location.state.imgUrl)
         setDate(location.state.date)
-        setCategoery(location.state. categary)
+        setCategoery(location.state.categary)
     }, [])
     return (
         <div>
@@ -55,7 +55,7 @@ function Edit() {
                         </div>
                         <div className="editing2">
                             <label htmlFor="">Image</label>
-                            <input type="text" value={ imgUrl} onChange={(e) => { setImage(e.target.value) }} />
+                            <input type="text" value={imgUrl} onChange={(e) => { setImage(e.target.value) }} />
                         </div>
                         <div className="editing3">
                             <input type="date" value={date} onChange={(e) => { setDate(e.target.value) }} required className='input3' />
@@ -64,7 +64,7 @@ function Edit() {
                         </div>
                         <div className="custom-select">
 
-                            <select className='select-div' value={categorey} onChange={(e) => { setCategoery(e.target.value) }} >
+                            <select className='select-div' value={categorey} onChange={(e) => { setCategary(e.target.value) }} >
                                 <option value="0">Categary</option>
 
                                 <option value="Arts">Arts</option>

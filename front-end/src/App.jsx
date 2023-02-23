@@ -22,7 +22,7 @@ function App() {
         <Route path="BlogaddedPage" element={<BlogaddedPage />} />
         <Route path="SingleBlogPage" element={<SingleBlogPage />} />
         <Route path="CategaryBlog/:categary" element={<CategaryBlog />} />
-        <Route path="EditPage" element={<Edit />} /> 
+        <Route path="EditPage" element={<Edit />} />
       </Routes>
     </BrowserRouter>
   );

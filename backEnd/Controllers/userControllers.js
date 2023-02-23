@@ -106,6 +106,30 @@ const addCommnd = async (req, res) => {
     console.log(error);
   }
 };
+const updateBlog = async function (req, res) {
+  console.log(req.body)
+  try {
+    await blogAddModel.findOneAndUpdate({ _id: req.params._id }, req.body)
+    res.json({ sucess: true, msg: "suecssfully Edit Your Blog" });
+
+  } catch (error) {
+    res.json({ sucess: false, msg: " Retry!!!! Please Try Again " })
+    console.log(error)
+  }
+
+}
+const cmntBlogPage = async function (req, res) {
+  console.log(req.body)
+  try {
+    let allCmnts = await cmntModel.find({ blogId: req.params.id })
+    console.log(allCmnts)
+    res.json({ sucess: true, msg: "suecssfully Cmnt Your Blog", allCmnts });
+  } catch (error) {
+    res.json({ sucess: false, msg: " NetWork Error!!!! Please Try Again " })
+    console.log(error)
+  }
+
+}
 
 module.exports = {
   blog,
@@ -117,4 +141,6 @@ module.exports = {
   categary,
   allCategaryPage,
   addCommnd,
+  updateBlog,
+  cmntBlogPage
 };
