@@ -8,7 +8,7 @@ import HomePage from "./Components/HomePage";
 import BlogaddedPage from "./Components/BlogaddedPage";
 import SingleBlogPage from "./Components/SingleBlogPage";
 import CategaryBlog from "./Components/CategaryBlog";
-import { Edit } from "@mui/icons-material";
+import EditPage from "./Components/EditPage"
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,7 +22,8 @@ function App() {
         <Route path="BlogaddedPage" element={<BlogaddedPage />} />
         <Route path="SingleBlogPage" element={<SingleBlogPage />} />
         <Route path="CategaryBlog/:categary" element={<CategaryBlog />} />
-        <Route path="EditPage" element={<Edit />} />
+        <Route path="editblog" element={<EditPage />} />
+
       </Routes>
     </BrowserRouter>
   );

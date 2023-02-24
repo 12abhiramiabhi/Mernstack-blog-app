@@ -1,13 +1,13 @@
 import React from 'react'
 
-function CmntCard({ blogCmntss }) {
+function CmntCard() {
     return (
         <div>
             <div className="viewcmnt">
                 <div className="cmnt_read">
-                    <h3 className='user-name'>{blogCmntss.userName}</h3>
-                    <p className='cmnt-para' >{blogCmntss.CommendText}</p>
-                    <button className='view-cmnt' >{blogCmntss.date}</button>
+                    <h3 className='user-name'>rr</h3>
+                    <p className='cmnt-para' ></p>
+                    <button className='view-cmnt'></button>
                 </div>
             </div>
         </div>

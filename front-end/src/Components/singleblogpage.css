@@ -6,8 +6,8 @@
     align-items: center;
     border: none;
     align-items: center;
-    color: #d1d1d7; 
-    
+    color: #d1d1d7;
+
 }
 
 .signup-card {
@@ -15,79 +15,91 @@
     background-color: #554f4f;
     height: 100vh;
     width: 100vh;
-   
+
 }
-.title-head{
+
+.title-head {
     margin-left: 20px;
     margin-top: 60px;
     font-family: sans-serif;
     color: white;
 }
-.para9{
+
+.para9 {
     font-family: sans-serif;
     color: white;
     margin-top: 25px;
     margin-left: 25px;
 
 }
-.img2{
+
+.img2 {
     height: 200px;
     width: 250px;
     margin-left: 250px;
     margin-top: 35px;
 }
-.input9{
-      margin: 30px;
+
+.input9 {
+    margin: 30px;
     padding: 10px;
 
 }
-.cat{
+
+.cat {
     margin-bottom: 90px;
     margin-left: 250px;
     padding-top: 28px;
-    
+
 }
-.text{
- height: 80px;
- width: 250px;
- margin-left: 94px;
+
+.text {
+    height: 80px;
+    width: 250px;
+    margin-left: 94px;
 
 
 }
-.cmnt-list{
+
+.cmnt-list {
     display: flex;
     margin-left: 200px;
     padding: 10px;
 }
-.cmnt-card{
+
+.cmnt-card {
     padding: 10px;
     height: 450px;
     width: 550px;
-    background: rgb(191,159,159,);
+    background: rgb(191, 159, 159, );
     margin-left: 600px;
     margin-top: -350px;
     border-radius: 10px;
 
 }
-.addcmnt{
+
+.addcmnt {
     margin-left: 120px;
     margin-top: 30px;
 }
-.cmntname{
-    color: rgb(5,5,5,);
+
+.cmntname {
+    color: rgb(5, 5, 5, );
     width: 500px;
     height: 40px;
     align-items: center;
-    background-color: rgb(250,249,249,);
+    background-color: rgb(250, 249, 249, );
     font-size: small;
     border-radius: 10px;
     margin-left: 23px;
 }
-.textarea{
+
+.textarea {
     margin-left: 160px;
     margin-top: 25px;
 }
-.cmnt-btn{
+
+.cmnt-btn {
     color: #0d0c22;
     width: 75px;
     height: 40px;
@@ -151,7 +163,7 @@
     padding: 10px;
 }
 
-.cmntcardz{
+.cmntcardz {
     padding: 10px;
     height: 350px;
     width: 410px;
@@ -177,7 +189,7 @@
     width: 397px;
     height: 40px;
     align-items: center;
-    background-color: rgb(250, 249, 249);
+    background-color: rgb(82, 75, 75);
     /* font-family: 'Satisfy', cursive; */
     font-size: small;
     /* margin-left: 900px; */
@@ -197,53 +209,28 @@
 
 }
 
-.cmnt-btn {
-    color: rgb(8, 8, 8);
-    width: 75px;
-    height: 40px;
-    align-items: center;
-    background-color: rgb(251, 249, 251);
-    /* font-family: 'Satisfy', cursive; */
-    font-size: larger;
-    /* margin-left: 90px; */
-    border-radius: 10px;
-    margin-bottom: 15px;
-    font-family: 'DM Serif Display', serif;
-}
 
-.viewcmnt {
-    display: flex;
-    padding: 10px;
-}
 
-.cmnt_read {
-    padding: 5px;
-    height: 200px;
-    width: 550px;
-    background: rgb(191, 159, 159);
-    /* margin-left: 600px; */
-    /* margin-top: -161px; */
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-
-}
-
-.cmnt-para {
-    font-family: 'DM Serif Display', serif;
-
-}
 
 .view-cmnt {
-    color: rgb(203, 186, 186);
+    color: rgb(29, 27, 27);
     width: 189px;
     height: 40px;
     align-items: center;
     background-color: rgb(251, 249, 251);
     font-family: 'DM Serif Display', serif;
 }
-.para-lorem{
-    color: white;
+
+.para-lorem {
+    color: rgb(19, 17, 17);
+    font-size: 30px;
 }
-.cat{
-    color: white;
+
+.cat {
+    color: rgb(19, 17, 17);
+}
+
+.img3 {
+    height: 100px;
+    width: 200px;
 }

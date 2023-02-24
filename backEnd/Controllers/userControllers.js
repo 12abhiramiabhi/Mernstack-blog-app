@@ -109,7 +109,7 @@ const addCommnd = async (req, res) => {
 const updateBlog = async function (req, res) {
   console.log(req.body)
   try {
-    await blogAddModel.findOneAndUpdate({ _id: req.params._id }, req.body)
+    await blogaddModel.findOneAndUpdate({ _id: req.params._id }, req.body)
     res.json({ sucess: true, msg: "suecssfully Edit Your Blog" });
 
   } catch (error) {
@@ -121,7 +121,7 @@ const updateBlog = async function (req, res) {
 const cmntBlogPage = async function (req, res) {
   console.log(req.body)
   try {
-    let allCmnts = await cmntModel.find({ blogId: req.params.id })
+    let allCmnts = await addCommndModel.find({ blogId: req.params.id })
     console.log(allCmnts)
     res.json({ sucess: true, msg: "suecssfully Cmnt Your Blog", allCmnts });
   } catch (error) {
